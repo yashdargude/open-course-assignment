@@ -1,14 +1,14 @@
 // app.jsx
 
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import WelcomePage from "./WelcomePage";
 
 function App() {
   return (
-    <div>
+    <HelmetProvider>
       <WelcomePage />
-    </div>
+    </HelmetProvider>
   );
 }
 
